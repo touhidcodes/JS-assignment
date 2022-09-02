@@ -8,21 +8,21 @@ function feetToMile(feet) {
   }
 }
 
-var assignment1Output = feetToMile(100);
-console.log(assignment1Output);
+var result = feetToMile(100);
+console.log("Your result is:", result);
 
 // Count Wood
 function woodCalculator(chair, table, bed) {
-  if (chair < 0 && table < 0 && bed < 0) {
+  if (chair < 0 || table < 0 || bed < 0) {
     console.log("Error! Please check again.");
   } else {
     var chair = chair * 1;
     var table = table * 3;
     var bed = bed * 5;
-    var total = chair + table + bed;
+    var woodTotal = chair + table + bed;
   }
-  return total;
+  return woodTotal;
 }
 
-var output2 = woodCalculator(1, -1, 3);
-console.log(output2);
+var woodNeed = woodCalculator(14, 6, 7);
+console.log("Your total wood is:", woodNeed, "Cubic");
