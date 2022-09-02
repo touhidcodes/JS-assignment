@@ -1,7 +1,11 @@
 // Feet To Mile
 function feetToMile(feet) {
-  var mile = feet / 5280;
-  return mile;
+  if (feet <= 0) {
+    console.log("Error! Please enter positive measurement.");
+  } else {
+    var mile = feet / 5280;
+    return mile;
+  }
 }
 
 var assignment1Output = feetToMile(100);
