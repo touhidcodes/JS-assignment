@@ -35,15 +35,19 @@ function brickCalculator(floor) {
     console.log("! Please Check your value.");
   }
   if (floor <= 10) {
-    var feet1 = floor * 15;
+    var feet = floor * 15;
   } else if (floor > 10 && floor <= 20) {
-    var feet2 = floor * 12;
+    var floorCount = floor % 10;
+    var feetCount = floorCount * 12;
+    feet = feetCount + 10 * 15;
   } else if (floor > 20) {
-    var feet3 = floor * 12;
+    floorCount = floor - 20;
+    feetCount = floorCount * 10;
+    feet = feetCount + 10 * 12 + 10 * 15;
   }
-  var feet = feet1 + feet2 + feet3;
+
   return feet;
 }
 
-var brickNeed = brickCalculator(20);
+var brickNeed = brickCalculator(22);
 console.log(brickNeed);
