@@ -28,7 +28,6 @@ function woodCalculator(chair, table, bed) {
 var woodNeed = woodCalculator(14, 6, 7);
 console.log("Your total wood is:", woodNeed, "Cubic");
 
-*/
 // Count Brick
 var floorCount = 0;
 var feetCount = 0;
@@ -38,8 +37,7 @@ var brick = 0;
 function brickCalculator(floor) {
   if (floor <= 0) {
     console.log("! Please Check your value.");
-  }
-  if (floor <= 10) {
+  } else if (floor <= 10) {
     feet = floor * 15;
   } else if (floor > 10 && floor <= 20) {
     floorCount = floor % 10;
@@ -56,3 +54,28 @@ function brickCalculator(floor) {
 
 var brickNeed = brickCalculator(17);
 console.log(brickNeed);
+
+*/
+// Tiny Friend
+var min = names[0];
+function tinyFriend(names) {
+  for (var i = 0; i < names.length; i++) {
+    var char = names[i];
+    if (char.length < names) {
+      min = char;
+    }
+    return min;
+  }
+}
+
+var names = [
+  "Mamun",
+  "Sassoto",
+  "Miraz",
+  "Fahim",
+  "Rabbi",
+  "Ahsan",
+  " Mehedi",
+  "Hasib",
+  "Naim",
+];
