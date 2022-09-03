@@ -1,4 +1,3 @@
-/*
 // Feet To Mile
 function feetToMile(feet) {
   if (feet < 0) {
@@ -55,18 +54,14 @@ function brickCalculator(floor) {
 var brickNeed = brickCalculator(17);
 console.log(brickNeed);
 
-*/
 // Tiny Friend
-
 function tinyFriend(names) {
-  var max_str = names[0].length;
+  var min_str = names[0].length;
   var min = names[0];
-  for (var i = 0; i < names.length; i++) {
+  for (var i = 1; i < names.length; i++) {
     var char = names[i].length;
-    console.log(names.length);
-    if (char < max_str) {
+    if (char < min_str) {
       min = names[i];
-      max_str = char;
     }
     return min;
   }
@@ -80,7 +75,7 @@ var names = [
   "Miraz",
   "Fahim",
   "Rabbi",
-  " Mehedi",
+  "Mehedi",
   "Hasib",
 ];
 var tinyFriendResult = tinyFriend(names);
