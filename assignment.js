@@ -1,3 +1,4 @@
+/*
 // Feet To Mile
 function feetToMile(feet) {
   if (feet < 0) {
@@ -27,20 +28,22 @@ function woodCalculator(chair, table, bed) {
 var woodNeed = woodCalculator(14, 6, 7);
 console.log("Your total wood is:", woodNeed, "Cubic");
 
+*/
 // Count Brick
 function brickCalculator(floor) {
   if (floor <= 0) {
     console.log("! Please Check your value.");
-  } else if (floor <= 10) {
-    var feet1 = floor * 15;
-    var brick1 = feet1 * 1000;
-  } else if (floor <= 10) {
-    var feet2 = floor * 12;
-    var brick2 = feet2 * 1000;
   }
-
-  return brick1;
+  if (floor <= 10) {
+    var feet1 = floor * 15;
+  } else if (floor > 10 && floor <= 20) {
+    var feet2 = floor * 12;
+  } else if (floor > 20) {
+    var feet3 = floor * 12;
+  }
+  var feet = feet1 + feet2 + feet3;
+  return feet;
 }
 
-var brickNeed = brickCalculator();
+var brickNeed = brickCalculator(20);
 console.log(brickNeed);
