@@ -30,24 +30,29 @@ console.log("Your total wood is:", woodNeed, "Cubic");
 
 */
 // Count Brick
+var floorCount = 0;
+var feetCount = 0;
+var feet = 0;
+var brick = 0;
+
 function brickCalculator(floor) {
   if (floor <= 0) {
     console.log("! Please Check your value.");
   }
   if (floor <= 10) {
-    var feet = floor * 15;
+    feet = floor * 15;
   } else if (floor > 10 && floor <= 20) {
-    var floorCount = floor % 10;
-    var feetCount = floorCount * 12;
+    floorCount = floor % 10;
+    feetCount = floorCount * 12;
     feet = feetCount + 10 * 15;
   } else if (floor > 20) {
     floorCount = floor - 20;
     feetCount = floorCount * 10;
     feet = feetCount + 10 * 12 + 10 * 15;
   }
-
-  return feet;
+  var brick = feet * 1000;
+  return brick;
 }
 
-var brickNeed = brickCalculator(22);
+var brickNeed = brickCalculator(17);
 console.log(brickNeed);
