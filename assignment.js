@@ -57,25 +57,31 @@ console.log(brickNeed);
 
 */
 // Tiny Friend
-var min = names[0];
+
 function tinyFriend(names) {
+  var max_str = names[0].length;
+  var min = names[0];
   for (var i = 0; i < names.length; i++) {
-    var char = names[i];
-    if (char.length < names) {
-      min = char;
+    var char = names[i].length;
+    console.log(names.length);
+    if (char < max_str) {
+      min = names[i];
+      max_str = char;
     }
     return min;
   }
 }
 
 var names = [
+  "Ahsan",
+  "Naim",
   "Mamun",
   "Sassoto",
   "Miraz",
   "Fahim",
   "Rabbi",
-  "Ahsan",
   " Mehedi",
   "Hasib",
-  "Naim",
 ];
+var tinyFriendResult = tinyFriend(names);
+console.log(tinyFriendResult);
