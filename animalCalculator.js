@@ -16,3 +16,6 @@ function animalCalculator(mile) {
   }
   return animalCount;
 }
+
+var animal = animalCalculator(30);
+console.log(animal);
