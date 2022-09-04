@@ -57,13 +57,12 @@ console.log(brickNeed);
 // Tiny Friend
 function tinyFriend(names) {
   var min = names[0];
-  //var min_str = names[i].length;
+  min_str = names[0].length;
   for (var i = 0; i < names.length; i++) {
     var element = names[i];
     var char = element.length;
-    var check = names[i].length;
-    if (char < check) {
-      min = names;
+    if (char < min_str) {
+      min = char;
     }
     return min;
   }
