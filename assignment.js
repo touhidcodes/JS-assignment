@@ -67,15 +67,6 @@ function tinyFriend(names) {
   return min;
 }
 
-//var min = names[0].length;
-//for (let i = 1; i < names.length; i++) {
-//  if (names[i].length < min) {
-//   min = names[i];
-// }
-// }
-//  return min;
-//}
-
 var names = [
   "Ahsan",
   "Mamun",
