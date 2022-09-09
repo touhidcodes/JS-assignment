@@ -57,16 +57,14 @@ var brickNeed = brickCalculator(17);
 */
 // Tiny Friend
 function tinyFriend(names) {
-  var min = names[0];
-  min_str = names[0].length;
-  for (var i = 0; i < names.length; i++) {
+  var min = names[0].length;
+  for (var i = 1; i < names.length; i++) {
     var element = names[i].length;
-    var char = element.length;
-    if (char < min_str) {
-      min = char;
+    if (element < min) {
+      min = names[i];
     }
-    return min;
   }
+  return min;
 }
 
 //var min = names[0].length;
