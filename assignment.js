@@ -1,4 +1,3 @@
-/*
 // Feet To Mile
 function feetToMile(feet) {
   if (feet < 0) {
@@ -53,8 +52,8 @@ function brickCalculator(floor) {
 }
 
 var brickNeed = brickCalculator(17);
- console.log(brickNeed);
-*/
+console.log(brickNeed);
+
 // Tiny Friend
 function tinyFriend(names) {
   var min = names[0].length;
