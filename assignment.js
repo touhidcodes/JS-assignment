@@ -1,3 +1,4 @@
+/*
 // Feet To Mile
 function feetToMile(feet) {
   if (feet < 0) {
@@ -52,20 +53,27 @@ function brickCalculator(floor) {
 }
 
 var brickNeed = brickCalculator(17);
-console.log(brickNeed);
-
+ console.log(brickNeed);
+*/
 // Tiny Friend
 function tinyFriend(names) {
-  var min = names[0];
-  min_str = names[0].length;
-  for (var i = 0; i < names.length; i++) {
-    var element = names[i];
-    var char = element.length;
-    if (char < min_str) {
-      min = char;
+  // var min = names[0];
+  // min_str = names[0].length;
+  // for (var i = 0; i < names.length; i++) {
+  //   var element = names[i];
+  //   var char = element.length;
+  //   if (char < min_str) {
+  //     min = char;
+  //   }
+  //   return min;
+  // }
+  var min = names[0].length;
+  for (let i = 1; i < names.length; i++) {
+    if (names[i].length < min) {
+      min = names[i];
     }
-    return min;
   }
+  return min;
 }
 
 var names = [
